@@ -1,0 +1,343 @@
+<!--
+ 
+                    THEME TWO © FADINGDESIGNS
+ 
+-->
+ 
+ 
+<html>
+    <head>
+        <title>{Title}</title>
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+            <meta name="color:bg" content="#ffffff" />
+            <meta name="color:text" content="#ffffff" />
+            <meta name="color:link" content="#1d1d1d" />
+            <meta name="color:postbg" content="#ffffff" />
+            <meta name="color:link hover" content="#1d1d1d" />
+            <meta name="color:navi link" content="#1d1d1d" />
+            <meta name="color:navi hover" content="#1d1d1d" />
+            <meta name="color:navibar" content="#fff" />
+            <meta name="color:border" content="#000" />
+            <meta name="color:sidebarbg" content="#fefefe" />
+            <meta name="color:tag bg" content="#fff" />
+           
+            <meta name="select:small size" content="9.5px" title="9px" />
+            <meta name="select:small size" content="10.5px" title="10px" />
+            <meta name="select:small size" content="11.5px" title="11px" />
+           
+            <meta name="select:link size" content="11.5px" title="11px" />
+            <meta name="select:link size" content="10.5px" title="10px" />
+            <meta name="select:link size" content="12.5px" title="12px" />
+           
+            <meta name="select:font size" content="11.5px" title="11px" />
+            <meta name="select:font size" content="10.5px" title="10px" />
+            <meta name="select:font size" content="12.5px" title="12px" />
+           
+            <meta name="text:Link 1" content="refresh" />
+            <meta name="text:Link 1 Icon" content="redo" />
+            <meta name="text:Link 1 Url" content="/" />
+            <meta name="text:Link 2" content="message" />
+            <meta name="text:Link 2 Icon" content="envelope" />
+            <meta name="text:Link 2 Url" content="/" />
+            <meta name="text:Link 3" content="" />
+            <meta name="text:Link 3 Icon" content="picture" />
+            <meta name="text:Link 3 Url" content="/" />
+            <meta name="text:Link 4" content="" />
+            <meta name="text:Link 4 Icon" content="bookmark" />
+            <meta name="text:Link 4 Url" content="/" />
+            <meta name="text:Link 5" content="5 text" />
+            <meta name="text:Link 5 Url" content="/" />
+            <meta name="text:Link 5 Hover" content="5 hover" />
+            <meta name="text:Link 6" content="6 text" />
+            <meta name="text:Link 6 Url" content="/" />
+            <meta name="text:Link 6 Hover" content="6 hover" />
+            <meta name="text:Link 7" content="7 text" />
+            <meta name="text:Link 7 Url" content="/" />
+            <meta name="text:Link 7 Hover" content="7 hover" />
+            <meta name="text:Link 8" content="8 text" />
+            <meta name="text:Link 8 Url" content="/" />
+            <meta name="text:Link 8 Hover" content="8 hover" />
+           
+            <meta name="image:header" content="" />
+            <meta name="image:sidebar1" content="" />
+            <meta name="image:sidebar2" content="" />
+            <meta name="image:sidebar3" content="" />
+            <meta name="image:sidebar4" content="" />
+            <meta name="image:sidebar5" content="" />
+       
+           
+        {/block:Description}
+   
+ 
+    <script>
+ 
+       var $container = $('#container');
+   $container.find('.notecount').each(function(){
+       var n = $(this).html().split(' ')[0].replace(/,/g, '');
+       if (n > 999) {
+           n = Math.floor(n / 100) / 10;
+           $(this).text(n + 'k notes');
+       }
+   });
+   
+</script>
+ 
+<script>
+   $(document).ready(function() {
+      $('iframe.tumblr_audio_player').load( function() {
+         $('iframe.tumblr_audio_player').contents().find("head")
+            .append($("<style type='text/css'> .audio-player{background: #d5e2f1!important; color: #1d1d1d!important;}  </style>"));
+      });
+   });
+</script>
+ 
+   
+        <script src ="//static.tumblr.com/fwgzvyf/Oj1o08f6h/shythemes.vr.js"></script>
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+   
+   <link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://static.tumblr.com/qudkd6d/Az6nkemqr/pxuphotoset.min.js"></script>
+<link href="//static.tumblr.com/wupwnyt/qWVoc4phj/resizing.css" rel="stylesheet" type="text/css"/>
+       
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        
+        <link href="styles.css" rel="stylesheet">
+       
+    </head>
+   
+<body>
+ 
+<div class="navbar">
+   
+        <a href="{text:Link 1 URL}"><span class="lnr lnr-{text:Link 1 Icon}"></span> {text:Link 1}</a>
+        <a href="{text:Link 2 URL}"><span class="lnr lnr-{text:Link 2 Icon}"></span> {text:Link 2}</a>
+        <a href="{text:Link 3 URL}"><span class="lnr lnr-{text:Link 3 Icon}"></span>  {text:Link 3}</a>
+        <a href="{text:Link 4 URL}"><span class="lnr lnr-{text:Link 4 Icon}"></span>  {text:Link 4}</a>
+       
+        <a href="{text:Link 5 URL}" style="float:right;" title="{text:Link 5 Hover}">{text:Link 5}</a>
+        <a href="{text:Link 6 URL}" style="float:right;" title="{text:Link 6 Hover}">{text:Link 6}</a>
+        <a href="{text:Link 7 URL}" style="float:right;" title="{text:Link 7 Hover}">{text:Link 7}</a>
+        <a href="{text:Link 8 URL}" style="float:right;" title="{text:Link 8 Hover}">{text:Link 8}</a>
+       
+</div>
+ 
+{block:HomePage}
+ 
+<div class="item-wrapper page-{CurrentPage}">
+ 
+        <div class="header"></div>
+        <div class="columnarea">
+        <div class="row">
+  <div class="column">
+ 
+  <div class="columntitle">About</div>
+ 
+  <a href="https://introspectivescene.tumblr.com/ii."><img src="https://78.media.tumblr.com/72ddce82c740676e0d75c1fb609a00f4/tumblr_p5to86wxDk1wvfl2so4_r1_400.png"></a>
+ 
+  </div>
+ 
+  <div class="column">
+ 
+  <div class="columntitle">The characters</div>
+ 
+  <a href="https://introspectivescene.tumblr.com/x."><img src="https://78.media.tumblr.com/b6533c72f0396ba598eb158c1d889aba/tumblr_p5to86wxDk1wvfl2so2_r2_400.png"></a>
+     
+  </div>
+ 
+  <div class="column">
+ 
+  <div class="columntitle">Around the Scene</div>
+ 
+  <a href="https://introspectivescene.tumblr.com/vii."><img src="https://78.media.tumblr.com/99942109e9d5cc53feff4fcc9fb143a3/tumblr_p5to86wxDk1wvfl2so3_r1_400.png"></a>
+     
+  </div>
+ 
+</div>
+</div>
+ 
+    </div>
+ 
+{/block:HomePage}
+ 
+<div class="sidebar">
+ 
+<section class="sidebar_title"><span class="lnr lnr-book" style="float:left;"></span>about</section>
+ 
+<img src="{image:sidebar1}">
+ 
+<section class="sidebar_content">
+ 
+   <center><h2>MIKEY . 20 . HE/HIM . WANNABE WRITER .</h2></center>
+Your friendly local dreamer, with dreams and aspirations bigger than life .
+ 
+</section>
+ 
+<section class="sidebar_title"><span class="lnr lnr-heart-pulse" style="float:left;"></span>writers supporting writers</section>
+ 
+<img src="{image:sidebar2}">
+ 
+<section class="sidebar_content">
+ 
+    <a href="http://kaecorbin.tumblr.com/">Support Rejects Crossroads !</a>
+    <a href="https://shortbf.tumblr.com/">Support Pink !</a>
+    <a href="http://jwalexander.tumblr.com/">Support Mavericks !</a>
+ 
+</section>
+ 
+ 
+<section class="sidebar_title" style="margin-top:5%;"><span class="lnr lnr-coffee-cup" style="float:left;"></span>projects</section>
+<a href="/iii."><img src="{image:sidebar3}"></a>
+<section class="sidebar_title"><span class="lnr lnr-star" style="float:left;"></span>commission info</section>
+<a href="/iv."><img src="{image:sidebar4}"></a>
+ 
+ <section class="sidebar_title"><span class="lnr lnr-gift" style="float:left;"></span>ways to support me !</section>
+ 
+<img src="{image:sidebar5}">
+ 
+<section class="sidebar_content">
+ 
+    <a href="https://www.redbubble.com/people/fadingmichael">My Redbubble shop !</a>
+    <a href="http://ko-fi.com/fading">Buy me a Coffee !</a>
+    <p>
+    & the easiest ( & free ! ) way to support me is to reblog my original content, follow me, and even just the occasional like ! I swear even one (1) like on my posts adds like 150% more confidence and motivation to me !
+ 
+ 
+</section>
+ 
+<footer><section class="footer">{CopyrightYears} © <a href="https://fadingdesigns.tumblr.com/"> FadingDesigns</a></section></footer>  
+ 
+   
+</div>
+ 
+<main id="container">  
+ 
+{block:Posts}
+ 
+<div class="posts">
+ 
+<section class="top_post">
+ 
+<a href="{Permalink}" title="{DayOfMonth}{DayOfMonthSuffix} {ShortMonth} {Year}"><span class="lnr lnr-calendar-full"></span> {TimeAgo}</a>
+ 
+{block:NoteCount}<a class="notecount" href="{Permalink}"><span class="lnr lnr-pencil"> </span> {NoteCountWithLabel}</a> {/block:NoteCount}
+{block:RebloggedFrom}
+<a href="{ReblogParentURL}" title="{ReblogParentName}"><span class="lnr lnr-location"></span>  via</a>
+<a href="{ReblogRootURL}" title="{ReblogRootName}"><span class="lnr lnr-pushpin"></span>  src</a>
+{/block:RebloggedFrom}
+<div class="date">
+<a href="{ReblogURL}" title="reblog"><span class="lnr lnr-plus-circle"></span></a>
+<a class="like-b">{LikeButton}<span class="b"><span class="lnr lnr-heart"></span></span></a>
+ 
+</div>
+   
+</section>
+<section class="post_text">
+{block:Text}
+{block:Title}<div class="title">{Title}</div>{/block:Title}
+{Body}
+{/block:Text}
+</section>
+ 
+{block:Photo}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{block:Caption}{Caption}{/block:Caption}{/block:Photo}
+ 
+{block:Panorama}{LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>{LinkCloseTag}{block:Caption}{Caption}{/block:Caption}{/block:Panorama}
+ 
+{block:Photoset}<div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">{block:Photos}<div class="photo-data"><div class="pxu-photo"><img src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"></div><a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a></div>{/block:Photos}</div>{block:Caption}{Caption}{/block:Caption}{/block:Photoset}
+ 
+{block:Quote}<div class="quote">❝ {Quote} ❞</div>{block:Source}<div class="quotesource">- {Source}</div>{/block:Source}{/block:Quote}
+ 
+{block:Link}<a href="{URL}" class="link" {Target}>{Name}</a>{block:Description}{Description}{/block:Description}{/block:Link}
+ 
+{block:Chat}{block:Title}{Title}{/block:Title}
+{block:Lines}<li>{block:Label}{Label}{/block:Label}{Line}</li>{/block:Lines}{/block:Chat}
+                       
+{block:Video}<div class="video">{Video-500}{block:Caption}{Caption}{/block:Caption}</div>{/block:Video}
+ 
+{block:Audio}
+{block:AlbumArt}
+<div style="border-radius:50px;">{AlbumArtURL}</div>
+{/block:AlbumArt}
+<div style="height: 85px; width:470px;">{AudioEmbed-500}</div>
+{block:Caption}{Caption}{/block:Caption}
+{/block:Audio}
+ 
+{block:Answer}
+<div class="asker">{Asker} whispered</div>
+<div class="question">{Question}</div>
+{Answer}
+{/block:Answer}
+ 
+<section class="bottom_post">
+ 
+<div class="tags">{block:HasTags}{block:Tags}<a href="{TagUrl}" title="{Tag}"><span class="lnr lnr-tag"></span> {Tag} </a>{/block:Tags}{/block:HasTags}</div>
+ 
+</section>
+ 
+</div>
+ 
+ {block:PostNotes}
+<div class="notes">{PostNotes}</div>
+{/block:PostNotes}
+ 
+{/block:Posts}
+ 
+ {block:Pagination}
+            <aside class="pagination">
+            {block:PreviousPage}<a href="{PreviousPage}"
+            style="
+            padding: 4px 8px;
+            display:inline-block;
+            background-color: #e5ebef;
+            color:{color:text};"
+            class="jump_page"><span class="lnr lnr-arrow-left"></span></a>
+            {/block:PreviousPage}
+            {block:JumpPagination length="5"}
+            {block:CurrentPage}
+            <span class="current_page"
+            style="
+            padding: 4px 8px;
+            background-color: #e5ebef;
+            color: {color:text};">
+            {PageNumber}</span>{/block:CurrentPage}
+            {block:JumpPage}
+            <a class="jump_page" href="{URL}">{PageNumber}</a>
+            {/block:JumpPage}
+            {/block:JumpPagination}
+            {block:NextPage}
+            <a href="{NextPage}" class="jump_page">
+            <span class="lnr lnr-arrow-right"></span></a>
+            {/block:NextPage}
+            </aside>
+        {/block:Pagination}
+ 
+ 
+{block:ContentSource}
+<!-- {SourceURL}{block:SourceLogo}<img src="{BlackLogoURL}"
+width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+{/block:SourceLogo}
+{block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo} -->
+{/block:ContentSource}
+ 
+<script>
+$(document).ready(function(){
+   $('.photo-slideshow').pxuPhotoset({
+       lightbox: true,
+       rounded: false,
+       gutter: '0px',
+       borderRadius: '0px',
+       photoset: '.photo-slideshow',
+       photoWrap: '.photo-data',
+       photo: '.pxu-photo'
+   });
+});
+</script>
+ 
+</body>
+</html>
